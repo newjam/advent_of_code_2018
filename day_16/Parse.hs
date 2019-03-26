@@ -4,8 +4,6 @@ import Types
 import Text.Parsec
 import Text.Parsec.String
 
-
-
 expect4 :: Parser [a] -> Parser (a, a, a, a)
 expect4 p = do
   is <- p

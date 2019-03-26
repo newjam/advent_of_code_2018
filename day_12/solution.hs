@@ -62,6 +62,4 @@ table n xs ps = sequence_ . take n .  map (putStrLn . ) $ [0..] generations
         diff1s = zipWith (-1) sums (drop 1 sums)
         row (i, generation) = show i ++ " " ++ (show . sum $ generation)
 
-
-
 stuff fn = runParser Parse.setup () ""  <$> readFile fn

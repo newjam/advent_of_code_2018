@@ -85,8 +85,6 @@ def foo(i, game):
   print(game)
   print('==== Value is', game.value(), '====')
 
-
-
 for j in range(n + 1):
   if game in previous:
     print('whoop whoop we found a repeat')

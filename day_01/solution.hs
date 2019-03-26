@@ -17,7 +17,6 @@ foo (_, previous) x = (duplicates', previous') where
   duplicates' = if x `Set.member` previous then Just x else Nothing
   previous' = Set.insert x previous
 
-
 main = getContents >>= (solution >>> putStrLn)
 
 
